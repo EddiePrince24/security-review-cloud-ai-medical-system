@@ -22,22 +22,6 @@ The backend also invokes an AI inference module when clinical data needs to be a
 System events and logs are collected by a centralized logging and monitoring service.
 All components are deployed within a cloud infrastructure environment.
 
-## Data Flow Description
-Data Flow 1 – User Authentication and Interaction
-Users submit authentication credentials and interact with the system through the web application.
-
-Data Flow 2 – Application Requests
-The web application sends user requests and clinical data to the backend application server for processing.
-
-Data Flow 3 – Clinical Data Storage
-The backend application stores and retrieves sensitive patient data from the clinical database.
-
-Data Flow 4 – AI Data Processing
-The backend application sends relevant clinical data to the AI inference module and receives AI-generated outputs.
-
-Data Flow 5 – Logging and Monitoring
-System components generate operational and security-related logs that are collected by the logging and monitoring service.
-
 ## AI Module Description
 Descrizione del modello AI e del suo ruolo nel sistema.
 
