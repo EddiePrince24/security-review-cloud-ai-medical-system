@@ -1,0 +1,25 @@
+### Data Flow 1 – Risk Identification
+
+The following risks have been identified for the user authentication and interaction flow:
+
+- **Confidentiality risk:** exposure of user credentials or sensitive data during authentication. An example is:
+                            A malicious user intercepts username and password used by a user.
+- **Integrity risk:** manipulation of user inputs leading to unauthorized actions. An example is:
+                            A malicious user changes the role of his account, becoming an admin of the system.
+- **Availability risk:** denial of service impacting user access to the application. An example is:
+                            A malicious user performs a DOS attack, trying to access the system multiple times.
+- **Accountability risk:** insufficient logging of authentication and user interaction events. An example is:
+                            Authentication and user interaction events are not adequately logged, limiting traceability.
+
+### Data Flow 2 – Risk Identification
+
+The following risks have been identified for the application requests flow:
+
+- **Confidentiality risk:** exposure of user credentials or sensitive data during authentication. An example is:
+                            A malicious user intercepts username and password used by a user.
+- **Integrity risk:** manipulation of user inputs leading to unauthorized actions. An example is:
+                            A malicious user changes the role of his account, becoming an admin of the system.
+- **Availability risk:** denial of service impacting user access to the application. An example is:
+                            A malicious user performs a DOS attack, trying to access the system multiple times.
+- **Accountability risk:** insufficient logging of authentication and user interaction events. An example is:
+                            Authentication and user interaction events are not adequately logged, limiting traceability.
