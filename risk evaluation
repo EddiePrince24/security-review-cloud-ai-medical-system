@@ -1,0 +1,8 @@
+### Data Flow 1 – Risk Evaluation
+
+| Risk | Likelihood | Impact |
+|-----|-----------|--------|
+| Exposure of user credentials | Medium (2) | High (3) |
+| Privilege escalation via input manipulation | Medium (2) | High (3) |
+| Denial of service | Medium (2) | Medium (2) |
+| Insufficient logging of authentication events | Medium (2) | Medium (2) |
