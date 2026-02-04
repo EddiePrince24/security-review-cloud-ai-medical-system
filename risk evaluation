@@ -2,7 +2,40 @@
 
 | Risk | Likelihood | Impact |
 |-----|-----------|--------|
-| Exposure of user credentials | Medium (2) | High (3) |
+| Exposure of user credentials | High (3) | High (3) |
+**Justification**:
+*Likelihood:* Credential theft attacks are common in web-based systems exposed to the internet.
+*Impact:* Compromised credentials may lead to unauthorized access to sensitive medical data and system misuse.
 | Privilege escalation via input manipulation | Medium (2) | High (3) |
+**Justification**:
+*Likelihood:* Privilege escalation through input manipulation requires specific vulnerabilities and is less frequent than credential theft.
+*Impact:* Unauthorized privilege escalation may lead to incorrect system behavior and potential patient mistreatment.
 | Denial of service | Medium (2) | Medium (2) |
-| Insufficient logging of authentication events | Medium (2) | Medium (2) |
+**Justification**:
+*Likelihood:* Denial of service attacks are a common threat for internet-facing applications.
+*Impact:* Service unavailability may delay access to the system, which can negatively affect clinical operations, even if no direct data compromise occurs.
+| Insufficient logging of authentication events | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Insufficient logging is less likely due to being a common requirement of standards such as ISO 27001.
+*Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of security-relevant events.
+
+### Data Flow 2 – Risk Evaluation
+
+| Risk | Likelihood | Impact |
+|-----|-----------|--------|
+| Exposure of sensitive data | High (3) | High (3) |
+**Justification**:
+*Likelihood:* Sensitive data theft is a common threat for backend systems processing medical data.
+*Impact:* Data breaches may lead to regulatory sanctions, reputational damage, and loss of user trust.
+| Unauthorized actions via manipulation of user requests | Medium (2) | High (3) |
+**Justification**:
+*Likelihood:* Manipulation of application requests requires specific vulnerabilities and is less frequent than direct data exposure.
+*Impact:* Unauthorized actions may lead to sensitive data disclosure or incorrect system behavior, potentially affecting patient safety.
+| Denial of service | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Denial of service due to user requests rarely happens, it can be observed during critical situations.
+*Impact:* Service unavailability may delay patient treatment and clinical workflows.
+| Insufficient logging of application requests events | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Logging requirements are typically defined in regulated environments, reducing the likelihood of insufficient logging.
+*Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of backend operations.
