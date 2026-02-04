@@ -1,0 +1,35 @@
+## Conclusion ##
+
+The project described a security review perfomed on a web application that acted as a medical system with an AI component deployed in a cloud infrastructure.
+
+The system architecture and data flows were defined and represented through graphical diagrams to support a structured security analysis.
+
+Based on the architecture and data flows, a threat-driven risk identification was conducted. For each data flow, risks related to confidentiality, integrity, availability, and accountability
+were identified, considering potential threat actors and attack scenarios.
+
+After the risk identification, for each risk the likelihood and impact were estimated, providing a justification to present the reasoning. The values for likelihood and impact have the folloing values:
+- Low associated with 1
+- Medium associated with 2
+- High associated with 3
+
+After the risk evaluation, for each risk 3 security controls were associated belonging to three types (Preventive, Corrective, Deductive). The proposed controls aim to reduce the likelihood 
+and/or impact of the identified risks and reflect common security engineering practices for web-based and AI-enabled medical systems.
+
+This project demonstrates a structured approach to security risk assessment, bridging system architecture, threat analysis, and technical security controls, with particular
+attention to regulated and safety-critical environments.
+
+## Risk Evaluation ##
+
+After the definition of the proposed security controls, a residual level of risk remains, as it is not feasible to completely eliminate all security threats in complex systems.
+
+In this theoretical case study, residual risk was qualitatively assessed. The implemented security controls are expected to significantly reduce the likelihood and/or impact of the identified risks;
+however, risks cannot be considered fully eliminated.
+
+Residual risks may still arise due to factors such as:
+- Advanced or previously unknown attack techniques
+- Human errors or misconfigurations
+- Exceptional operational conditions (e.g., peak usage or emergency scenarios)
+- Limitations or unexpected behaviors of AI components
+
+In a real-world deployment, residual risk should be continuously monitored and reassessed through operational security activities, such as vulnerability assessments, penetration testing, security
+monitoring, and incident response, in alignment with standards such as ISO/IEC 27001.
