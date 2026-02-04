@@ -1,0 +1,59 @@
+## Data Flow 1 – Security Controls & Mitigations ##
+
+| Risk | Security Control | Control Type |
+|-----|-----------------|--------------|
+| Exposure of user credentials | TLS encryption (HTTPS), strong authentication mechanisms (e.g. MFA), secure password storage (hashing and salting) | Preventive |
+
+| Privilege escalation via input manipulation | Role-Based Access Control (RBAC), server-side input validation, strict request parsing and authorization checks | Preventive |
+
+| Denial of service | Rate limiting, request throttling, authentication before resource-intensive operation | Preventive |
+
+| Insufficient logging of authentication events | Centralized logging, log integrity protection, security monitoring and alerting | Detective |
+
+## Data Flow 2 – Security Controls & Mitigations ##
+
+| Risk | Security Control | Control Type |
+|-----|-----------------|--------------|
+| Exposure of sensitive data | Web Application Firewall (WAF), TLS encryption, Strong authentication and authorization checks | Preventive |
+
+| Unauthorized actions via manipulation of user requests | Server-side input validation, authorization checks on each request, RBAC enforcement | Preventive |
+
+| Denial of service | Rate Limiter lato Backend, Circuit Breaker Pattern, Asynchronous Task Queues  | Preventive |
+
+| Insufficient logging of application requests events | Centralized logging, log integrity protection, security monitoring and alerting | Detective |
+
+## Data Flow 3 – Security Controls & Mitigations ##
+
+| Risk | Security Control | Control Type |
+|-----|-----------------|--------------|
+| Exposure of sensitive clinical data | AES-256 Encryption, TLS Encryption, IDOR (Insecure Direct Object Reference) Defence | Preventive |
+
+| Unauthorized modification of stored clinical data | Access control on data modification, input validation, backup and restore procedures | Preventive / Corrective |
+
+| Denial of service | Circuit Breaker Pattern, Asynchronous Task Queues, Content Delivery Network (CDN) | Preventive |
+
+| Insufficient logging of data access events | Centralized logging, log integrity protection, security monitoring and alerting | Detective |
+
+## Data Flow 4 – Security Controls & Mitigations ##
+
+| Risk | Security Control | Control Type |
+|-----|-----------------|--------------|
+| Exposure of sensitive data inferred from AI outputs | Encryption at-rest (AES-256), Access Control, Input and output validation to prevent prompt injection and data leakage | Preventive |
+
+| Manipulation of AI inference results | RBAC enforcement, Access control on data modification, Input validation | Preventive |
+
+| Denial of service | Circuit Breaker Pattern, Asynchronous Task Queues, Rate Limiter lato Backend | Preventive |
+
+| Insufficient logging of AI interaction events | Centralized logging, log integrity protection, security monitoring and alerting | Detective |
+
+## Data Flow 5 – Security Controls & Mitigations ##
+
+| Risk | Security Control | Control Type |
+|-----|-----------------|--------------|
+| Exposure of logs or monitoring data containing sensitive information | Encryption at-rest (AES-256), Encryption in-transit (TLS 1.3 or higher), Secure log transport mechanisms | Preventive |
+
+| Tampering with logs or monitoring events to conceal malicious activities | RBAC enforcement, Access control on data modification, Log integrity protection (e.g. append-only, hashing) | Preventive |
+
+| Disruption of logging and monitoring services | Rate limiting, request throttling, authentication before resource-intensive operation | Preventive |
+
+| Lack of traceability of security-relevant events | Centralized logging, log integrity protection, security monitoring and alerting | Detective |
