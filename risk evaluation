@@ -39,3 +39,66 @@
 **Justification**:
 *Likelihood:* Logging requirements are typically defined in regulated environments, reducing the likelihood of insufficient logging.
 *Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of backend operations.
+
+### Data Flow 3 – Risk Evaluation
+
+| Risk | Likelihood | Impact |
+|-----|-----------|--------|
+| Exposure of sensitive clinical data | High (3) | High (3) |
+**Justification**:
+*Likelihood:* Sensitive data theft is a common threat for clinical databases storing sensitive medical data.
+*Impact:* Data breaches may lead to regulatory sanctions, reputational damage, and loss of user trust.
+| Unauthorized modification of stored clinical data | Medium (2) | High (3) |
+**Justification**:
+*Likelihood:* Unauthorized modification of stored clinical data requires elevated privileges or exploitation of vulnerabilities and is less frequent than data exposure.
+*Impact:* Unauthorized modification of clinical data may result in incorrect diagnoses or patient mistreatment.
+| Denial of service | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Denial of service impacting user access to the application rarely happens, as the database is not directly exposed to external networks.
+*Impact:* Service unavailability may delay patient treatment and clinical workflows.
+| Insufficient logging of data access events | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Logging requirements are typically defined in regulated environments, reducing the likelihood of insufficient logging.
+*Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of backend operations.
+
+### Data Flow 4 – Risk Evaluation
+
+| Risk | Likelihood | Impact |
+|-----|-----------|--------|
+| Exposure of sensitive data inferred from AI outputs | Medium (2) | High (3) |
+**Justification**:
+*Likelihood:* Sensitive data inferred from AI outputs is less likely to be acquired, as direct data theft from the clinical database is generally easier.
+*Impact:* Data breaches may lead to regulatory sanctions, reputational damage, and loss of user trust.
+| Manipulation of AI inference results | Medium (2) | High (3) |
+**Justification**:
+*Likelihood:* Manipulation of AI inference results rarely happens as the AI Inference Module is not directly exposed on the web.
+*Impact:* Manipulation of AI inference results may lead to patient mistreatment.
+| Denial of service | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Denial of service impacting AI inference availability rarely happens, it can be observed during critical situations.
+*Impact:* Service unavailability may delay patient treatment and clinical workflows.
+| Insufficient logging of AI interaction events | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Logging requirements are typically defined in regulated environments, reducing the likelihood of insufficient logging.
+*Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of backend operations.
+
+### Data Flow 5 – Risk Evaluation
+
+| Risk | Likelihood | Impact |
+|-----|-----------|--------|
+| Exposure of logs or monitoring data containing sensitive information | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Logs are typically stored in protected systems and are not directly exposed, reducing the likelihood of interception.
+*Impact:* Exposure of logs may lead to privacy violations and facilitate further attacks.
+| Tampering with logs or monitoring events to conceal malicious activities | Medium (2) | Medium (2) |
+**Justification**:
+*Likelihood:* Log tampering requires elevated privileges and is less frequent than initial compromise activities.
+*Impact:* Altered logs hinder incident detection, response, and forensic analysis.
+| Disruption of logging and monitoring services | High (3) | High (3) |
+**Justification**:
+*Likelihood:* Disruption of logging and monitoring services requires specific access or misconfigurations.
+*Impact:* Loss of monitoring severely limits the ability to detect, respond to, and contain security incidents.
+| Lack of traceability of security-relevant events | Low (1) | Medium (2) |
+**Justification**:
+*Likelihood:* Logging requirements are typically defined in regulated environments, reducing the likelihood of insufficient logging.
+*Impact:* Lack of adequate logging limits incident investigation, auditability, and traceability of backend operations.
